@@ -26,7 +26,7 @@ export const templates: Template[] = [
       "Social Media Links"
     ],
     imageUrl: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-    demoUrl: "https://preview.colorlib.com/theme/tasty/",
+    demoUrl: "https://cuisine-nextjs.vercel.app/",
     themeColor: "amber"
   },
   {
@@ -66,4 +66,5 @@ export const templates: Template[] = [
     themeColor: "blue"
   }
 ];
+
 
