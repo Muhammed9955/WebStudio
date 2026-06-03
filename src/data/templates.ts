@@ -321,7 +321,7 @@ export const templates: Template[] = [
     id: "construction",
     slug: "construction",
     imageUrl: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80",
-    demoUrl: "https://preview.colorlib.com/theme/dusk/",
+    demoUrl: "https://asaleeb-eg.com/",
     themeColor: "amber",
     title: {
       en: "Construction & Interior Design",
@@ -395,7 +395,7 @@ export const templates: Template[] = [
     id: "nursery",
     slug: "nursery",
     imageUrl: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=1200&q=80",
-    demoUrl: "https://preview.colorlib.com/theme/kiddy/",
+    demoUrl: "https://kinder-garden-academy.vercel.app/",
     themeColor: "pink",
     title: {
       en: "Nurseries & Preschools",
