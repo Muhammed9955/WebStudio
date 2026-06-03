@@ -1,13 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Inter, Cairo } from "next/font/google";
+import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
+import { hasLocale } from "@/dictionaries";
+import { notFound } from "next/navigation";
+import { theme } from "@/data/theme";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+});
+
+const cairo = Cairo({
+  variable: "--font-cairo",
+  subsets: ["arabic"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -33,24 +42,53 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export async function generateStaticParams() {
+  return [{ lang: "en" }, { lang: "ar" }];
+}
+
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ lang: string }>;
 }>) {
+  const { lang } = await params;
+
+  if (!hasLocale(lang)) {
+    notFound();
+  }
+
+  const isRtl = lang === "ar";
+
+  const themeStyles = `
+    :root {
+      --theme-primary: ${theme.primary};
+      --theme-primary-dark: ${theme.primaryDark};
+      --theme-accent: ${theme.accent};
+      --theme-secondary: ${theme.secondary};
+      --theme-background: ${theme.background};
+      --theme-foreground: ${theme.foreground};
+    }
+  `;
+
   return (
     <html
-      lang="en"
-      className={`${inter.variable} h-full antialiased`}
+      lang={lang}
+      dir={isRtl ? "rtl" : "ltr"}
+      className={`${inter.variable} ${cairo.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        <style dangerouslySetInnerHTML={{ __html: themeStyles }} />
+      </head>
       <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
-        <Navbar />
+        <Navbar lang={lang} />
         <main className="flex-1 flex flex-col">
           {children}
         </main>
-        <Footer />
-        <WhatsAppFloatingButton />
+        <Footer lang={lang} />
+        <WhatsAppFloatingButton lang={lang} />
       </body>
     </html>
   );

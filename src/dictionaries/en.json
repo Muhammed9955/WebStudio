@@ -1,0 +1,62 @@
+{
+  "navbar": {
+    "title": "WebStudio",
+    "templates": "Templates",
+    "howItWorks": "How it works",
+    "getStarted": "Get Started"
+  },
+  "home": {
+    "badge": "Launch your business online today",
+    "title": "Get a professional website for your business in",
+    "titleHighlight": "48 hours",
+    "subtitle": "Ready-made, highly-converting templates optimized for Restaurants, Gyms, and Clinics.",
+    "viewTemplates": "View Templates",
+    "features": {
+      "noCoding": "No coding required",
+      "mobileOptimized": "Mobile optimized",
+      "seoFriendly": "SEO friendly"
+    },
+    "whyChoose": {
+      "title": "Why choose our templates?",
+      "subtitle": "We focus on what matters most: converting your visitors into customers.",
+      "fast": {
+        "title": "Lightning Fast",
+        "description": "Optimized for speed to ensure your customers never wait. Better speed means better conversion."
+      },
+      "mobile": {
+        "title": "Mobile First",
+        "description": "Over 70% of your traffic comes from mobile. Our templates look beautiful on every device."
+      },
+      "whatsapp": {
+        "title": "WhatsApp Integration",
+        "description": "Direct integration with WhatsApp to capture leads and orders immediately."
+      }
+    },
+    "cta": {
+      "title": "Ready to grow your business?",
+      "subtitle": "Browse our collection of premium templates and get your business online in record time.",
+      "button": "Explore Templates Now"
+    }
+  },
+  "templates": {
+    "title": "Choose Your Template",
+    "subtitle": "Select from our highly-converting, professionally designed templates. All templates include mobile optimization and WhatsApp integration.",
+    "learnMore": "Learn More",
+    "orderTemplate": "Order this template",
+    "back": "Back to templates",
+    "premiumBadge": "Premium Template",
+    "keyFeatures": "Key Features",
+    "getThisWebsite": "Get this website",
+    "deliveryDetail": "Delivery within 48 hours. Fully setup and optimized for your business.",
+    "orderWhatsApp": "Order via WhatsApp",
+    "viewDemo": "View Live Demo",
+    "notFound": "Template Not Found"
+  },
+  "whatsapp": {
+    "floatingMsg": "Hello, I'm interested in getting a professional website for my business.",
+    "orderMsg": "Hello, I'm interested in ordering the {title} template for my business."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

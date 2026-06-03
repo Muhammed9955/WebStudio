@@ -1,20 +1,19 @@
 @import "tailwindcss";
 
+/* Force class-based dark mode variant (disabled by default) */
+@variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --color-brand: #25D366; /* WhatsApp Green */
-  --color-brand-dark: #128C7E;
+  --color-brand: var(--theme-primary);
+  --color-brand-dark: var(--theme-primary-dark);
+  --color-accent: var(--theme-accent);
+  --color-secondary: var(--theme-secondary);
+  --animate-spin-slow: spin 8s linear infinite;
 }
 
 :root {
-  --background: #f8fafc; /* slate-50 */
-  --foreground: #0f172a; /* slate-900 */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #020617; /* slate-950 */
-    --foreground: #f8fafc; /* slate-50 */
-  }
+  --background: var(--theme-background);
+  --foreground: var(--theme-foreground);
 }
 
 body {
@@ -23,6 +22,10 @@ body {
   font-family: var(--font-inter), Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html[lang="ar"] body {
+  font-family: var(--font-cairo), Arial, sans-serif;
 }
 
 html {
