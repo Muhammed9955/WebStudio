@@ -20,7 +20,7 @@ export async function generateMetadata(
   }
   
   return {
-    title: `${template.title[lang as Locale]} | WebStudio`,
+    title: `${template.title[lang as Locale]} | Elevora`,
     description: template.description[lang as Locale],
   };
 }
@@ -44,8 +44,8 @@ export default async function TemplateDetailsPage({
   const phoneNumber = "+201032137085";
   const defaultMessage = encodeURIComponent(
     lang === "ar"
-      ? `مرحباً، أنا مهتم بطلب قالب ${template.title.ar} لعملي.`
-      : `Hello, I'm interested in ordering the ${template.title.en} template for my business.`
+      ? `مرحباً إليفوريا، أنا مهتم بطلب باقة النمو ${template.title.ar} لعملي.`
+      : `Hello Elevora, I'm interested in ordering the ${template.title.en} growth solution for my business.`
   );
   const waLink = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
 

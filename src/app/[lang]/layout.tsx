@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Cairo } from "next/font/google";
+import { Outfit, Space_Grotesk, Tajawal } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -8,33 +8,40 @@ import { hasLocale } from "@/dictionaries";
 import { notFound } from "next/navigation";
 import { theme } from "@/data/theme";
 
-const inter = Inter({
-  variable: "--font-inter",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
-const cairo = Cairo({
-  variable: "--font-cairo",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const tajawal = Tajawal({
+  variable: "--font-tajawal",
   subsets: ["arabic"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
-  title: "WebStudio | Professional Ready-Made Websites",
-  description: "Get a professional, responsive website for your business in 48 hours. Ready-made templates for Restaurants, Gyms, and Clinics.",
-  keywords: ["website templates", "ready made websites", "business websites", "restaurant website template", "gym website template", "clinic website template", "whatsapp integration website"],
-  authors: [{ name: "WebStudio" }],
+  title: "Elevora | Digital Solutions for Ambitious Brands",
+  description: "Transform your digital presence with strategic marketing, media buying, creative design, and custom software development (mobile apps, web apps, UI/UX).",
+  keywords: ["digital marketing agency", "media buying", "strategic marketing", "web development", "mobile apps", "UI/UX design", "video editing", "ready-made business solutions", "Elevora"],
+  authors: [{ name: "Elevora" }],
   openGraph: {
-    title: "WebStudio | Professional Ready-Made Websites",
-    description: "Get a professional, responsive website for your business in 48 hours. We build high-converting sites for local businesses.",
+    title: "Elevora | Digital Solutions for Ambitious Brands",
+    description: "Transform your digital presence with strategic marketing, media buying, creative design, and custom software development.",
     type: "website",
     locale: "en_US",
-    siteName: "WebStudio",
+    siteName: "Elevora",
   },
   twitter: {
     card: "summary_large_image",
-    title: "WebStudio | Professional Ready-Made Websites",
-    description: "Get a professional, responsive website for your business in 48 hours.",
+    title: "Elevora | Digital Solutions for Ambitious Brands",
+    description: "Transform your digital presence with strategic marketing, media buying, creative design, and custom software development.",
   },
   robots: {
     index: true,
@@ -70,17 +77,30 @@ export default async function RootLayout({
       --theme-background: ${theme.background};
       --theme-foreground: ${theme.foreground};
     }
+    .dark {
+      --theme-background: ${theme.dark.background};
+      --theme-foreground: ${theme.dark.foreground};
+    }
   `;
 
   return (
     <html
       lang={lang}
       dir={isRtl ? "rtl" : "ltr"}
-      className={`${inter.variable} ${cairo.variable} h-full antialiased`}
+      className={`${outfit.variable} ${spaceGrotesk.variable} ${tajawal.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <head>
         <style dangerouslySetInnerHTML={{ __html: themeStyles }} />
+        <script dangerouslySetInnerHTML={{ __html: `
+          try {
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+              document.documentElement.classList.add('dark');
+            } else {
+              document.documentElement.classList.remove('dark');
+            }
+          } catch (_) {}
+        ` }} />
       </head>
       <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
         <Navbar lang={lang} />

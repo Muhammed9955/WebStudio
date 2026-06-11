@@ -1,60 +1,303 @@
 {
   "navbar": {
-    "title": "WebStudio",
-    "templates": "Templates",
-    "howItWorks": "How it works",
-    "getStarted": "Get Started"
+    "title": "Elevora",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "templates": "Ready-to-Go Solutions",
+    "howItWorks": "Our Process",
+    "getStarted": "Get in Touch"
   },
   "home": {
-    "badge": "Launch your business online today",
-    "title": "Get a professional website for your business in",
-    "titleHighlight": "48 hours",
-    "subtitle": "Ready-made, highly-converting templates optimized for Restaurants, Gyms, and Clinics.",
-    "viewTemplates": "View Templates",
+    "badge": "Elevora - Digital Solutions for Ambitious Brands",
+    "title": "Transform Your Brand With",
+    "titleHighlight": "Strategic Growth",
+    "subtitle": "We specialize in strategic marketing, media buying, premium video editing, graphic design, and custom software development including mobile apps, web apps, and UI/UX design.",
+    "viewTemplates": "Explore Ready-Made Solutions",
     "features": {
-      "noCoding": "No coding required",
-      "mobileOptimized": "Mobile optimized",
-      "seoFriendly": "SEO friendly"
+      "noCoding": "Strategic Ads",
+      "mobileOptimized": "Premium Custom Web",
+      "seoFriendly": "Local SEO & Visibility"
     },
     "whyChoose": {
-      "title": "Why choose our templates?",
-      "subtitle": "We focus on what matters most: converting your visitors into customers.",
+      "title": "Why Choose Elevora?",
+      "subtitle": "We combine data-driven marketing with cutting-edge technology to scale your business.",
       "fast": {
-        "title": "Lightning Fast",
-        "description": "Optimized for speed to ensure your customers never wait. Better speed means better conversion."
+        "title": "Strategic Marketing",
+        "description": "Targeted ad campaigns and media buying on Facebook, Instagram, Google, and TikTok to drive high-intent leads."
       },
       "mobile": {
-        "title": "Mobile First",
-        "description": "Over 70% of your traffic comes from mobile. Our templates look beautiful on every device."
+        "title": "Stunning Creative Design",
+        "description": "High-converting graphic designs, custom brand identities, and premium video editing that captivates your audience."
       },
       "whatsapp": {
-        "title": "WhatsApp Integration",
-        "description": "Direct integration with WhatsApp to capture leads and orders immediately."
+        "title": "Advanced Software & Apps",
+        "description": "Bespoke web development, mobile apps (iOS/Android), and intuitive UI/UX design built to scale."
       }
     },
     "cta": {
-      "title": "Ready to grow your business?",
-      "subtitle": "Browse our collection of premium templates and get your business online in record time.",
-      "button": "Explore Templates Now"
+      "title": "Ready to scale your business?",
+      "subtitle": "Let's build a powerful digital presence and marketing funnel that drives continuous revenue.",
+      "button": "Get Started Now"
     }
   },
+  "services": {
+    "title": "Our Digital Services",
+    "subtitle": "Custom-tailored marketing and development solutions designed to accelerate your growth.",
+    "items": [
+      {
+        "title": "Strategic Marketing & Media Buying",
+        "description": "High-performing paid ad campaigns on Meta, Google, and TikTok that deliver measurable ROI and quality leads."
+      },
+      {
+        "title": "Custom Software & App Development",
+        "description": "Bespoke mobile applications (iOS/Android) and advanced web platforms designed for seamless scalability."
+      },
+      {
+        "title": "UI/UX & Creative Design",
+        "description": "User-centric, clean interface designs and striking brand visual assets that distinguish your brand."
+      },
+      {
+        "title": "Professional Video Editing",
+        "description": "Premium promotional videos, commercials, and short-form social media content to hook your target audience."
+      },
+      {
+        "title": "Ready-to-Go Web Packages",
+        "description": "Frictionless, conversion-optimized websites (Gyms, Clinics, Restaurants) launched in 48 hours to start selling immediately."
+      }
+    ]
+  },
+  "about": {
+    "title": "Who We Are",
+    "subtitle": "We are a result-driven digital agency pushing the limits of technology and marketing.",
+    "description1": "At Elevora, we believe in combining strategic thinking, cutting-edge software development, and striking visual creative arts. We work closely with businesses from Dubai, Egypt, and beyond to build digital products and launch ad campaigns that deliver measurable return on investment.",
+    "description2": "Whether you need a custom-built mobile application, an enterprise-level search engine campaign, or a ready-made high-converting industry platform, our team is equipped to deliver within your timeframe and budget.",
+    "stats": [
+      { "value": "Custom", "label": "Tailored for your business" },
+      { "value": "Fast", "label": "Launch in days, not months" },
+      { "value": "Modern", "label": "Clean designs & latest tech" },
+      { "value": "Direct", "label": "Conversion & lead focus" }
+    ]
+  },
+  "process": {
+    "title": "Our Working Methodology",
+    "subtitle": "How we turn ideas into result-driven software and marketing assets.",
+    "steps": [
+      {
+        "title": "Audit & Discovery",
+        "description": "We analyze your competition, audit current channels, and set exact performance benchmarks."
+      },
+      {
+        "title": "Strategy & Development",
+        "description": "We build custom mobile/web apps or custom-configure our high-converting Launch Accelerators."
+      },
+      {
+        "title": "Acquisition & Traffic",
+        "description": "Deploy pixel tracking and launch targeted campaigns on Meta, Google, and TikTok to collect quality leads."
+      },
+      {
+        "title": "Scale & Optimize",
+        "description": "Analyze performance stats, optimize landing page conversion rates, and double down on winning channels."
+      }
+    ]
+  },
+  "planner": {
+    "title": "Interactive Project Planner",
+    "subtitle": "Estimate scope, build strategy blueprints, and export directly to WhatsApp.",
+    "servicesLabel": "1. What do you need?",
+    "budgetLabel": "2. Estimated Marketing/Development Budget",
+    "estimateLabel": "3. Estimated Strategy Results",
+    "timelineText": "Calculated Development Timeline",
+    "whatsappButton": "Export Project Blueprint to WhatsApp",
+    "customServices": [
+      { "id": "marketing", "name": "Paid Advertising Campaign", "days": 5 },
+      { "id": "web", "name": "Custom Web Application", "days": 10 },
+      { "id": "mobile", "name": "Custom Mobile App (iOS/Android)", "days": 20 },
+      { "id": "seo", "name": "SEO & Google Maps Rank", "days": 7 },
+      { "id": "design", "name": "Branding & UI/UX Design", "days": 6 }
+    ],
+    "budgets": [
+      "$500 - $1.5k",
+      "$1.5k - $3k",
+      "$3k+"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Clear answers regarding our services, development cycles, and pricing systems.",
+    "items": [
+      {
+        "question": "What is the difference between Custom Development and Launch Accelerators?",
+        "answer": "Custom Development involves bespoke engineering (iOS/Android mobile apps, major portals) tailored from scratch. Launch Accelerators are pre-built, conversion-optimized blueprint sites (Clinics, Gyms, Restaurants) customized and launched with WhatsApp integration and ads setup in under 7 business days."
+      },
+      {
+        "question": "Do I own the source code and visual designs?",
+        "answer": "Yes, absolutely. Once final payments are processed, 100% intellectual property, designs, source codes, and assets belong entirely to you with zero hidden subscription costs."
+      },
+      {
+        "question": "How do you track the performance and ROI of ads?",
+        "answer": "We install advanced pixel tracking (Meta Pixel, Google Analytics, TikTok Pixel) to map exactly where your clients come from. We measure click-through rates, call acquisitions, and WhatsApp conversions to scale profitable sets."
+      },
+      {
+        "question": "How does the WhatsApp order and booking integration work?",
+        "answer": "When a visitor clicks booking or ordering buttons, it compiles a structured details template (e.g., name, product, scheduled date) and forwards it directly to your business WhatsApp chat, letting you close sales instantly."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to scale your business? Let's discuss your next project.",
+    "nameLabel": "Your Name",
+    "emailLabel": "Email Address",
+    "messageLabel": "Project Details",
+    "submitButton": "Send Message",
+    "successMessage": "Thank you! Your message has been sent successfully. We will get back to you shortly.",
+    "officeEgypt": "Egypt Office",
+    "officeDubai": "Dubai Office",
+    "phone": "Phone",
+    "email": "Email"
+  },
+  "packages": {
+    "title": "Select a Service Package",
+    "subtitle": "Choose from our predefined strategic packages tailored to your business needs, with custom onboarding and execution.",
+    "ctaText": "Get Started",
+    "categories": {
+      "content": "Content Management",
+      "digital": "Digital Solutions"
+    },
+    "contentItems": [
+      {
+        "name": "Starter Package",
+        "badge": "Standard",
+        "description": "Ideal for small businesses starting their online journey.",
+        "goal": "Goal: Establish a solid social media presence",
+        "features": [
+          "20 monthly social media posts",
+          "Simple creative graphic designs",
+          "Copywriting (Captions + Hashtags)",
+          "1 social media platform management",
+          "Monthly content planning calendar"
+        ]
+      },
+      {
+        "name": "Growth Package",
+        "badge": "Popular",
+        "description": "Perfect for businesses seeking steady growth and engagement.",
+        "goal": "Goal: Increase engagement and audience reach",
+        "features": [
+          "25–30 monthly social media posts",
+          "Professional custom designs",
+          "4–6 basic Reels (editing + ideas)",
+          "2 social media platforms management",
+          "Profile optimization (Bio + Call to Action)",
+          "Monthly performance analytics report"
+        ]
+      },
+      {
+        "name": "Active Sales Package",
+        "badge": "Pro",
+        "description": "For active businesses focused on conversion and leads.",
+        "goal": "Goal: Convert engagement into direct leads",
+        "features": [
+          "35–45 monthly social media posts",
+          "Professional Reels & Motion Graphics",
+          "Monthly creative content strategy",
+          "Multi-platform social management",
+          "Ad campaign management (budget not included)",
+          "Performance analysis & ongoing optimization"
+        ]
+      },
+      {
+        "name": "Expansion Package",
+        "badge": "Elite",
+        "description": "For businesses serious about market domination and scale.",
+        "goal": "Goal: Semi-complete marketing automation",
+        "features": [
+          "50–60 monthly pieces of content (posts, reels, stories)",
+          "Complete social visual brand identity",
+          "Professional Meta/Google ads management",
+          "Video scripting & storyboarding",
+          "Weekly performance reports",
+          "Priority inbox and messages support"
+        ]
+      }
+    ],
+    "digitalItems": [
+      {
+        "name": "Simple Landing Page",
+        "badge": "Starter",
+        "description": "Single-page high-converting sales funnel setup.",
+        "goal": "Goal: Capture leads and convert traffic",
+        "features": [
+          "Professional high-end landing page",
+          "Fully responsive design (Mobile & Desktop)",
+          "Lead generation capture form",
+          "Direct click-to-WhatsApp integration",
+          "High performance & basic SEO optimization"
+        ]
+      },
+      {
+        "name": "Business Website",
+        "badge": "Standard",
+        "description": "Multi-page website showing your brand's full capability.",
+        "goal": "Goal: Establish brand authority and credibility",
+        "features": [
+          "Multi-page design (5–7 standard pages)",
+          "Premium custom UI/UX design",
+          "Basic search engine optimization (SEO)",
+          "Google Analytics & Meta Pixel integration",
+          "Contact form & direct WhatsApp messaging",
+          "User experience (UX) audit and alignment"
+        ]
+      },
+      {
+        "name": "Growth Website",
+        "badge": "Growth",
+        "description": "Dynamic CMS website optimized for continuous marketing.",
+        "goal": "Goal: Drive traffic, capture leads & measure results",
+        "features": [
+          "Complete professional CMS website",
+          "Simple content management (add services/blog/portfolio)",
+          "Dedicated Services, Works, and Blog layouts",
+          "Advanced SEO strategy & implementation",
+          "Ultra-fast loading speed optimization",
+          "Integration with popular marketing tools"
+        ]
+      },
+      {
+        "name": "Advanced Digital System",
+        "badge": "Bespoke",
+        "description": "Custom features, software integration, or light web app.",
+        "goal": "Goal: Automate your business processes and flows",
+        "features": [
+          "Advanced corporate website or light Web Application",
+          "Fully customized features based on business goals",
+          "Simple dashboard or customer relationship system (CRM)",
+          "Booking, appointment lead, or custom tracking database",
+          "Integration with paid advertising systems",
+          "Ongoing technical optimization & continuous analysis"
+        ]
+      }
+    ]
+  },
   "templates": {
-    "title": "Choose Your Template",
-    "subtitle": "Select from our highly-converting, professionally designed templates. All templates include mobile optimization and WhatsApp integration.",
+    "title": "Explore Our Industry Solutions",
+    "subtitle": "Select from our premium, pre-configured digital solutions. Each package integrates high-converting website designs with direct WhatsApp lead-capture tools.",
     "learnMore": "Learn More",
-    "orderTemplate": "Order this template",
-    "back": "Back to templates",
-    "premiumBadge": "Premium Template",
-    "keyFeatures": "Key Features",
-    "getThisWebsite": "Get this website",
-    "deliveryDetail": "Delivery within 48 hours. Fully setup and optimized for your business.",
+    "orderTemplate": "Order this solution",
+    "back": "Back to solutions",
+    "premiumBadge": "Growth Blueprint",
+    "keyFeatures": "What's Included",
+    "getThisWebsite": "Get this solution",
+    "deliveryDetail": "Fully configured and launched within 7 business days. Ready-to-go, mobile-optimized, and direct WhatsApp booking.",
     "orderWhatsApp": "Order via WhatsApp",
     "viewDemo": "View Live Demo",
-    "notFound": "Template Not Found"
+    "notFound": "Solution Not Found"
   },
   "whatsapp": {
-    "floatingMsg": "Hello, I'm interested in getting a professional website for my business.",
-    "orderMsg": "Hello, I'm interested in ordering the {title} template for my business."
+    "floatingMsg": "Hello Elevora, I'm interested in strategic marketing and digital solutions for my business.",
+    "orderMsg": "Hello Elevora, I'm interested in ordering the {title} growth solution for my business."
   },
   "footer": {
     "rights": "All rights reserved."

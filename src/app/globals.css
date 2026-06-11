@@ -9,6 +9,8 @@
   --color-accent: var(--theme-accent);
   --color-secondary: var(--theme-secondary);
   --animate-spin-slow: spin 8s linear infinite;
+  --font-sans: var(--font-outfit), Arial, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-outfit), Arial, sans-serif;
 }
 
 :root {
@@ -19,13 +21,23 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), Arial, sans-serif;
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-html[lang="ar"] body {
-  font-family: var(--font-cairo), Arial, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+html[lang="ar"] body,
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4,
+html[lang="ar"] h5,
+html[lang="ar"] h6 {
+  font-family: var(--font-tajawal), Arial, sans-serif;
 }
 
 html {

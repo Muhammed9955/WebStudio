@@ -9,8 +9,8 @@ export default function TemplateCard({ template, lang }: { template: Template; l
   
   const defaultMessage = encodeURIComponent(
     lang === "ar"
-      ? `مرحباً، أنا مهتم بطلب قالب ${titleText} لعملي.`
-      : `Hello, I'm interested in ordering the ${titleText} template for my business.`
+      ? `مرحباً إليفوريا، أنا مهتم بطلب باقة النمو ${titleText} لعملي.`
+      : `Hello Elevora, I'm interested in ordering the ${titleText} growth solution for my business.`
   );
   
   const waLink = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
@@ -62,7 +62,7 @@ export default function TemplateCard({ template, lang }: { template: Template; l
             className="w-full py-3 px-4 rounded-xl bg-accent hover:opacity-90 text-white text-center font-medium transition-all flex items-center justify-center gap-2 shadow-md shadow-accent/20"
           >
             <MessageCircle size={20} />
-            {lang === "ar" ? "طلب هذا القالب" : "Order this template"}
+            {lang === "ar" ? "طلب هذا الحل" : "Order this solution"}
           </Link>
         </div>
       </div>

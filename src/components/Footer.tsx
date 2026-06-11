@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MonitorSmartphone } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { getDictionary, Locale } from "@/dictionaries";
 
 export default async function Footer({ lang }: { lang: string }) {
@@ -11,7 +11,7 @@ export default async function Footer({ lang }: { lang: string }) {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <Link href={`/${lang}`} className="flex items-center gap-2 group">
             <div className="p-2 bg-brand text-white rounded-lg group-hover:bg-brand-dark transition-colors">
-              <MonitorSmartphone size={24} />
+              <Sparkles size={24} />
             </div>
             <span className="font-bold text-xl tracking-tight text-foreground">
               {dict.navbar.title}

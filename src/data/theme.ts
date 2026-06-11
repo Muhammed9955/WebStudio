@@ -1,13 +1,13 @@
 export const theme = {
-  primary: "#06B6D4",      // Cyan
-  primaryDark: "#0891B2",  // Cyan Dark
-  accent: "#F97316",       // Orange Accent
-  secondary: "#1E293B",    // Dark Slate
-  background: "#F1F5F9",   // Light Slate Background
-  foreground: "#1E293B",   // Dark Slate text
+  primary: "#14D2C3",      // Elevora Turquoise
+  primaryDark: "#0FA89C",  // Dark Turquoise
+  accent: "#F59E0B",       // Warm Amber Accent
+  secondary: "#111827",    // Charcoal / Slate Dark
+  background: "#F9FAFB",   // Light gray background
+  foreground: "#111827",   // Dark text
   
   dark: {
-    background: "#0F172A", // Dark Slate Background
-    foreground: "#F1F5F9", // Light Slate text
+    background: "#0B0F19", // Very dark blue/slate for dark mode
+    foreground: "#F9FAFB", // Light text for dark mode
   }
 };

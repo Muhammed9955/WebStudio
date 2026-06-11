@@ -13,7 +13,7 @@ export async function generateMetadata({
 
   const dict = await getDictionary(lang);
   return {
-    title: `${dict.templates.title} | WebStudio`,
+    title: `${dict.templates.title} | Elevora`,
     description: dict.templates.subtitle,
   };
 }
