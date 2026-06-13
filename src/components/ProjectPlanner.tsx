@@ -59,7 +59,7 @@ export default function ProjectPlanner({ lang, labels }: ProjectPlannerProps) {
   };
 
   return (
-    <div className="bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/80 rounded-3xl p-8 shadow-xl">
+    <div className="bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/80 rounded-3xl p-6 sm:p-8 shadow-xl">
       <div className="text-center mb-8">
         <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
           {labels.title}

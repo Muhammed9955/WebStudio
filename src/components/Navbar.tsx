@@ -3,9 +3,19 @@ import { Sparkles } from "lucide-react";
 import { getDictionary, Locale } from "@/dictionaries";
 import LanguageSwitcher from "./LanguageSwitcher";
 import ThemeToggle from "./ThemeToggle";
+import MobileNavbarMenu from "./MobileNavbarMenu";
 
 export default async function Navbar({ lang }: { lang: string }) {
   const dict = await getDictionary(lang as Locale);
+
+  const labels = {
+    home: dict.navbar.home || (lang === "ar" ? "الرئيسية" : "Home"),
+    about: dict.navbar.about || (lang === "ar" ? "من نحن" : "About Us"),
+    services: dict.navbar.services || (lang === "ar" ? "خدماتنا" : "Services"),
+    templates: dict.navbar.templates,
+    contact: dict.navbar.contact || (lang === "ar" ? "اتصل بنا" : "Contact"),
+    getStarted: dict.navbar.getStarted,
+  };
 
   return (
     <nav className="sticky top-0 z-40 w-full backdrop-blur-lg bg-background/80 border-b border-slate-200 dark:border-slate-800">
@@ -18,21 +28,22 @@ export default async function Navbar({ lang }: { lang: string }) {
             {dict.navbar.title}
           </span>
         </Link>
-        <div className="flex items-center gap-4 sm:gap-6">
-          <Link href={`/${lang}`} className="text-sm font-medium text-slate-600 hover:text-brand dark:text-slate-300 dark:hover:text-brand transition-colors hidden md:block">
-            {dict.navbar.home || "Home"}
+        <div className="flex items-center gap-2 sm:gap-4 md:gap-6">
+          {/* Desktop Nav Links */}
+          <Link href={`/${lang}`} className="text-sm font-semibold text-slate-600 hover:text-brand dark:text-slate-300 dark:hover:text-brand transition-colors hidden md:block">
+            {labels.home}
           </Link>
-          <Link href={`/${lang}#about`} className="text-sm font-medium text-slate-600 hover:text-brand dark:text-slate-300 dark:hover:text-brand transition-colors hidden md:block">
-            {dict.navbar.about || "About Us"}
+          <Link href={`/${lang}#about`} className="text-sm font-semibold text-slate-600 hover:text-brand dark:text-slate-300 dark:hover:text-brand transition-colors hidden md:block">
+            {labels.about}
           </Link>
-          <Link href={`/${lang}#services`} className="text-sm font-medium text-slate-600 hover:text-brand dark:text-slate-300 dark:hover:text-brand transition-colors hidden sm:block">
-            {dict.navbar.services || "Services"}
+          <Link href={`/${lang}#services`} className="text-sm font-semibold text-slate-600 hover:text-brand dark:text-slate-300 dark:hover:text-brand transition-colors hidden md:block">
+            {labels.services}
           </Link>
-          <Link href={`/${lang}/templates`} className="text-sm font-medium text-slate-600 hover:text-brand dark:text-slate-300 dark:hover:text-brand transition-colors">
-            {dict.navbar.templates}
+          <Link href={`/${lang}/templates`} className="text-sm font-semibold text-slate-600 hover:text-brand dark:text-slate-300 dark:hover:text-brand transition-colors hidden md:block">
+            {labels.templates}
           </Link>
-          <Link href={`/${lang}#contact`} className="text-sm font-medium text-slate-600 hover:text-brand dark:text-slate-300 dark:hover:text-brand transition-colors hidden sm:block">
-            {dict.navbar.contact || "Contact"}
+          <Link href={`/${lang}#contact`} className="text-sm font-semibold text-slate-600 hover:text-brand dark:text-slate-300 dark:hover:text-brand transition-colors hidden md:block">
+            {labels.contact}
           </Link>
           
           <ThemeToggle />
@@ -42,8 +53,11 @@ export default async function Navbar({ lang }: { lang: string }) {
             href={`/${lang}#contact`} 
             className="hidden lg:inline-flex px-4 py-2 text-sm font-medium text-white bg-accent hover:opacity-90 rounded-lg transition-colors"
           >
-            {dict.navbar.getStarted}
+            {labels.getStarted}
           </Link>
+
+          {/* Mobile Nav Toggle */}
+          <MobileNavbarMenu lang={lang} labels={labels} />
         </div>
       </div>
     </nav>

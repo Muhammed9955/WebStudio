@@ -243,7 +243,7 @@ export default async function Home({
             </div>
           </div>
 
-          <div className="max-w-2xl mx-auto bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/80 rounded-3xl p-8 md:p-10 shadow-lg shadow-slate-100 dark:shadow-none">
+          <div className="max-w-2xl mx-auto bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/80 rounded-3xl p-6 md:p-10 shadow-lg shadow-slate-100 dark:shadow-none">
             <ContactForm
               lang={lang}
               labels={{
