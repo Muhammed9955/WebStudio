@@ -55,8 +55,8 @@ export default function MobileNavbarMenu({ lang, labels }: MobileNavbarMenuProps
 
       {/* Drawer menu */}
       <div
-        className={`fixed inset-y-0 right-0 ltr:right-0 rtl:left-0 rtl:right-auto top-16 z-50 w-full max-w-[280px] bg-white dark:bg-slate-950 border-s border-slate-200 dark:border-slate-800/80 p-6 flex flex-col justify-between shadow-2xl transition-transform duration-300 ease-out ${
-          isOpen ? "translate-x-0" : "ltr:translate-x-full rtl:-translate-x-full"
+        className={`fixed inset-y-0 right-0 rtl:left-0 rtl:right-auto top-16 z-50 w-full max-w-[280px] bg-white dark:bg-slate-950 border-s border-slate-200 dark:border-slate-800/80 p-6 flex flex-col justify-between shadow-2xl transition-transform duration-300 ease-out ${
+          isOpen ? "translate-x-0" : "translate-x-full rtl:-translate-x-full"
         }`}
       >
         <div className="flex flex-col space-y-6">
