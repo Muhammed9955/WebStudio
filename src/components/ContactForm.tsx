@@ -38,7 +38,7 @@ export default function ContactForm({ lang, labels }: ContactFormProps) {
           name: formData.name,
           email: formData.email,
           message: formData.message,
-          subject: "New Lead - Elevora Agency Form Submission",
+          subject: "New Lead - MMS Creative Agency Form Submission",
         }),
       });
 

@@ -27,20 +27,20 @@ const tajawal = Tajawal({
 });
 
 export const metadata: Metadata = {
-  title: "Elevora | Digital Solutions for Ambitious Brands",
+  title: "MMS Creative Agency | Digital Solutions for Ambitious Brands",
   description: "Transform your digital presence with strategic marketing, media buying, creative design, and custom software development (mobile apps, web apps, UI/UX).",
-  keywords: ["digital marketing agency", "media buying", "strategic marketing", "web development", "mobile apps", "UI/UX design", "video editing", "ready-made business solutions", "Elevora"],
-  authors: [{ name: "Elevora" }],
+  keywords: ["digital marketing agency", "media buying", "strategic marketing", "web development", "mobile apps", "UI/UX design", "video editing", "ready-made business solutions", "MMS Creative Agency"],
+  authors: [{ name: "MMS Creative Agency" }],
   openGraph: {
-    title: "Elevora | Digital Solutions for Ambitious Brands",
+    title: "MMS Creative Agency | Digital Solutions for Ambitious Brands",
     description: "Transform your digital presence with strategic marketing, media buying, creative design, and custom software development.",
     type: "website",
     locale: "en_US",
-    siteName: "Elevora",
+    siteName: "MMS Creative Agency",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elevora | Digital Solutions for Ambitious Brands",
+    title: "MMS Creative Agency | Digital Solutions for Ambitious Brands",
     description: "Transform your digital presence with strategic marketing, media buying, creative design, and custom software development.",
   },
   robots: {

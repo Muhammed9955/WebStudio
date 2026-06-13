@@ -39,8 +39,8 @@ export default function Packages({ lang, labels }: PackagesProps) {
         const textarea = document.getElementById("message") as HTMLTextAreaElement;
         if (textarea) {
           textarea.value = lang === "ar"
-            ? `مرحباً إليفوريا، أود الاستفسار والبدء في باقة: "${packageName}"`
-            : `Hello Elevora, I would like to inquire about and get started with the "${packageName}" package.`;
+            ? `مرحباً MMS Creative Agency، أود الاستفسار والبدء في باقة: "${packageName}"`
+            : `Hello MMS Creative Agency, I would like to inquire about and get started with the "${packageName}" package.`;
           
           // Dispatch input event to update React state inside ContactForm
           const event = new Event("input", { bubbles: true });

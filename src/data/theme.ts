@@ -1,7 +1,7 @@
 export const theme = {
-  primary: "#14D2C3",      // Elevora Turquoise
+  primary: "#14D2C3",      // MMS Creative Agency Turquoise
   primaryDark: "#0FA89C",  // Dark Turquoise
-  accent: "#F59E0B",       // Warm Amber Accent
+  accent: "#14D2C3",       // Brand Turquoise Accent
   secondary: "#111827",    // Charcoal / Slate Dark
   background: "#F9FAFB",   // Light gray background
   foreground: "#111827",   // Dark text

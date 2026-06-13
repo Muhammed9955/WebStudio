@@ -6,8 +6,8 @@ export default function WhatsAppFloatingButton({ lang }: { lang: string }) {
   
   const defaultMessage = encodeURIComponent(
     lang === "ar"
-      ? "مرحباً إليفوريا، أنا مهتم بالحصول على خدمات التسويق الاستراتيجي والحلول الرقمية لعملي."
-      : "Hello Elevora, I'm interested in strategic marketing and digital solutions for my business."
+      ? "مرحباً MMS Creative Agency، أنا مهتم بالحصول على خدمات التسويق الاستراتيجي والحلول الرقمية لعملي."
+      : "Hello MMS Creative Agency, I'm interested in strategic marketing and digital solutions for my business."
   );
   
   const waLink = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;

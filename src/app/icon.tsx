@@ -18,7 +18,7 @@ export default function Icon() {
       <div
         style={{
           fontSize: 22,
-          background: '#25D366',
+          background: '#14D2C3',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -29,7 +29,7 @@ export default function Icon() {
           fontWeight: '900',
         }}
       >
-        W
+        M
       </div>
     ),
     // ImageResponse options

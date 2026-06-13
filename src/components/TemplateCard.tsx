@@ -9,8 +9,8 @@ export default function TemplateCard({ template, lang }: { template: Template; l
   
   const defaultMessage = encodeURIComponent(
     lang === "ar"
-      ? `مرحباً إليفوريا، أنا مهتم بطلب باقة النمو ${titleText} لعملي.`
-      : `Hello Elevora, I'm interested in ordering the ${titleText} growth solution for my business.`
+      ? `مرحباً MMS Creative Agency، أنا مهتم بطلب باقة النمو ${titleText} لعملي.`
+      : `Hello MMS Creative Agency, I'm interested in ordering the ${titleText} growth solution for my business.`
   );
   
   const waLink = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;

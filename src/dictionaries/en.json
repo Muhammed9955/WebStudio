@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "title": "Elevora",
+    "title": "MMS Creative Agency",
     "home": "Home",
     "about": "About Us",
     "services": "Services",
@@ -10,7 +10,7 @@
     "getStarted": "Get in Touch"
   },
   "home": {
-    "badge": "Elevora - Digital Solutions for Ambitious Brands",
+    "badge": "MMS Creative Agency - Digital Solutions for Ambitious Brands",
     "title": "Transform Your Brand With",
     "titleHighlight": "Strategic Growth",
     "subtitle": "We specialize in strategic marketing, media buying, premium video editing, graphic design, and custom software development including mobile apps, web apps, and UI/UX design.",
@@ -21,7 +21,7 @@
       "seoFriendly": "Local SEO & Visibility"
     },
     "whyChoose": {
-      "title": "Why Choose Elevora?",
+      "title": "Why Choose MMS Creative Agency?",
       "subtitle": "We combine data-driven marketing with cutting-edge technology to scale your business.",
       "fast": {
         "title": "Strategic Marketing",
@@ -71,7 +71,7 @@
   "about": {
     "title": "Who We Are",
     "subtitle": "We are a result-driven digital agency pushing the limits of technology and marketing.",
-    "description1": "At Elevora, we believe in combining strategic thinking, cutting-edge software development, and striking visual creative arts. We work closely with businesses from Dubai, Egypt, and beyond to build digital products and launch ad campaigns that deliver measurable return on investment.",
+    "description1": "At MMS Creative Agency, we believe in combining strategic thinking, cutting-edge software development, and striking visual creative arts. We work closely with businesses from Dubai, Egypt, and beyond to build digital products and launch ad campaigns that deliver measurable return on investment.",
     "description2": "Whether you need a custom-built mobile application, an enterprise-level search engine campaign, or a ready-made high-converting industry platform, our team is equipped to deliver within your timeframe and budget.",
     "stats": [
       { "value": "Custom", "label": "Tailored for your business" },
@@ -296,8 +296,8 @@
     "notFound": "Solution Not Found"
   },
   "whatsapp": {
-    "floatingMsg": "Hello Elevora, I'm interested in strategic marketing and digital solutions for my business.",
-    "orderMsg": "Hello Elevora, I'm interested in ordering the {title} growth solution for my business."
+    "floatingMsg": "Hello MMS Creative Agency, I'm interested in strategic marketing and digital solutions for my business.",
+    "orderMsg": "Hello MMS Creative Agency, I'm interested in ordering the {title} growth solution for my business."
   },
   "footer": {
     "rights": "All rights reserved."

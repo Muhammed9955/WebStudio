@@ -52,8 +52,8 @@ export default function ProjectPlanner({ lang, labels }: ProjectPlannerProps) {
 
     const text =
       lang === "ar"
-        ? `مرحباً إليفوريا، قمت بتقدير مشروعي عبر الحاسبة التفاعلية:\n- الخدمات المطلوبة: ${selectedNames || "لم يتم التحديد"}\n- الميزانية المحددة: ${selectedBudget}\n- الوقت المتوقع: ${timelineDays} يوم عمل.\nدعنا نبدأ بمناقشة خطة العمل!`
-        : `Hello Elevora, I estimated my project using your interactive planner:\n- Services Needed: ${selectedNames || "None selected"}\n- Budget Range: ${selectedBudget}\n- Calculated Timeline: ${timelineDays} business days.\nLet's discuss our strategic blueprint!`;
+        ? `مرحباً MMS Creative Agency، قمت بتقدير مشروعي عبر الحاسبة التفاعلية:\n- الخدمات المطلوبة: ${selectedNames || "لم يتم التحديد"}\n- الميزانية المحددة: ${selectedBudget}\n- الوقت المتوقع: ${timelineDays} يوم عمل.\nدعنا نبدأ بمناقشة خطة العمل!`
+        : `Hello MMS Creative Agency, I estimated my project using your interactive planner:\n- Services Needed: ${selectedNames || "None selected"}\n- Budget Range: ${selectedBudget}\n- Calculated Timeline: ${timelineDays} business days.\nLet's discuss our strategic blueprint!`;
 
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`, "_blank");
   };
