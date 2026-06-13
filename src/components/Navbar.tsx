@@ -25,7 +25,8 @@ export default async function Navbar({ lang }: { lang: string }) {
             <Sparkles size={24} />
           </div>
           <span className="font-bold text-xl tracking-tight text-foreground">
-            {dict.navbar.title}
+            <span className="hidden md:inline">{dict.navbar.title}</span>
+            <span className="inline md:hidden">MMS Creative</span>
           </span>
         </Link>
         <div className="flex items-center gap-2 sm:gap-4 md:gap-6">
