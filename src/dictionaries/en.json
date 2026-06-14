@@ -15,6 +15,44 @@
     "titleHighlight": "Strategic Growth",
     "subtitle": "We specialize in strategic marketing, media buying, premium video editing, graphic design, and custom software development including mobile apps, web apps, and UI/UX design.",
     "viewTemplates": "Explore Ready-Made Solutions",
+    "slider": [
+      {
+        "badge": "Digital Marketing & Ads",
+        "title": "Drive Profitable Growth & Leads with",
+        "titleHighlight": "Media Buying",
+        "subtitle": "High-performing paid ad campaigns on Meta, Google, and TikTok that deliver measurable ROI and scale your customer acquisition.",
+        "ctaText": "Scale Your Marketing",
+        "ctaLink": "#contact",
+        "image": "/marketing_ads.png"
+      },
+      {
+        "badge": "Bespoke Development",
+        "title": "Bespoke Mobile Apps & Scalable",
+        "titleHighlight": "Software Systems",
+        "subtitle": "Next-generation web applications, iOS/Android mobile apps, and robust systems tailored to automate and grow your operations.",
+        "ctaText": "Explore Packages",
+        "ctaLink": "#packages",
+        "image": "/software_dev.png"
+      },
+      {
+        "badge": "Premium UI/UX Design",
+        "title": "Elevate Your Brand Identity &",
+        "titleHighlight": "Creative Visuals",
+        "subtitle": "User-centric UI/UX design, modern branding, and stunning graphic layouts that differentiate your business in competitive markets.",
+        "ctaText": "Start Your Design",
+        "ctaLink": "#contact",
+        "image": "/ui_design.png"
+      },
+      {
+        "badge": "Cinematic Production",
+        "title": "Hook Your Audience with High-Impact",
+        "titleHighlight": "Video Editing",
+        "subtitle": "Professional video editing, commercial production, and social media reels that turn attention into conversion and sales.",
+        "ctaText": "See Ready Solutions",
+        "ctaLink": "/templates",
+        "image": "/video_prod.png"
+      }
+    ],
     "features": {
       "noCoding": "Strategic Ads",
       "mobileOptimized": "Premium Custom Web",

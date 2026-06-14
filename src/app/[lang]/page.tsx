@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import ContactForm from "@/components/ContactForm";
 import Packages from "@/components/Packages";
 import FaqAccordion from "@/components/FaqAccordion";
+import HeroSlider from "@/components/HeroSlider";
 
 export default async function Home({
   params,
@@ -30,56 +31,8 @@ export default async function Home({
 
   return (
     <div className="flex flex-col w-full bg-background dark:bg-slate-950">
-      {/* Hero Section */}
-      <section className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-white dark:from-slate-950 dark:via-slate-900/30 dark:to-slate-950">
-        <div className="absolute inset-0 bg-grid-slate-200/[0.03] dark:bg-grid-slate-800/[0.03] bg-[bottom_1px_center]" />
-        
-        {/* Glow Effects */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-brand/10 dark:bg-brand/5 rounded-full blur-3xl pointer-events-none" />
-        
-        <div className="container relative mx-auto px-4 md:px-6 flex flex-col items-center text-center">
-          <div className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium text-brand bg-brand/10 mb-8 border border-brand/20 shadow-sm">
-            <Sparkles className="h-4 w-4 me-2 animate-pulse" />
-            {dict.home.badge}
-          </div>
-          
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white max-w-5xl mb-8 leading-[1.15]">
-            {dict.home.title}{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-brand-dark dark:from-brand dark:to-teal-400">
-              {dict.home.titleHighlight}
-            </span>
-          </h1>
-          
-          <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mb-12 leading-relaxed">
-            {dict.home.subtitle}
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
-            <Link 
-              href={`/${lang}/templates`}
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-brand hover:bg-brand-dark rounded-xl transition-all shadow-lg shadow-brand/20 hover:shadow-xl hover:shadow-brand/30 hover:scale-[1.02] active:scale-[0.98]"
-            >
-              {dict.home.viewTemplates}
-              <ArrowRight className="ms-2 rtl:rotate-180 h-5 w-5" />
-            </Link>
-          </div>
-          
-          <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-sm font-medium text-slate-500 dark:text-slate-400">
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-5 w-5 text-brand" />
-              <span>{dict.home.features.noCoding}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-5 w-5 text-brand" />
-              <span>{dict.home.features.mobileOptimized}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-5 w-5 text-brand" />
-              <span>{dict.home.features.seoFriendly}</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section Slider */}
+      <HeroSlider slides={dict.home.slider || []} lang={lang} />
 
 
       {/* Services Section */}
